@@ -1,0 +1,16 @@
+body{
+    display: flex;
+    justify-content: space-around;
+}
+
+.banner{
+    margin-top: 3.3rem;
+    border: 1px solid green;
+}
+.section-login{
+    border: 1px solid red;
+    width: 50rem;
+    height: 65rem;
+    border-radius: 3rem;
+    margin-top: 3.3rem;
+}
