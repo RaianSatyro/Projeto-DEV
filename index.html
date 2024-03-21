@@ -14,53 +14,55 @@
     <div id="background-color-3"></div>
     <div id="background-color-4"></div>
 
-    <section class="banner">
-        <div class="banner-content">
-          <div>
-            <h2 class="titulo-pag">Bem-Vindo!</h2>
-            <p class="msg-login">faça seu login</p>
-          </div>
-            <div class="img-banner">
-                <img src="src/assets/banner.svg" alt="">
+    <div class="container">
+        <section class="banner">
+            <div class="banner-content">
+                <div>
+                    <h2 class="titulo-pag">Bem-Vindo!</h2>
+                    <p class="msg-login">faça seu login</p>
+                </div>
+                <div class="img-banner">
+                    <img src="src/assets/banner.svg" alt="">
+                </div>
             </div>
-        </div>
-    </section>
-    <section class="section-login">
-        <div class="logo">
-            <img src="src/assets/logo.svg" alt="">
-            <h1>FOFOQUINHA</h1>
-        </div>
-        <div class="form-login">
-          <div>
-            <input class="email-senha" id="form-email" type="text" placeholder="Email ou telefone">
-          </div>
-          <div class="pass-field">
-            <input class="email-senha" id="form_senha" type="password" placeholder="Senha">
-            <i class="bi bi-eye" id="btn-icon" onclick="mostrarSenha()"></i>
-          </div>
-          <div class="esqueceu-senha">
-            <a href="#">Esqueceu sua senha?</a>
-          </div>
-        </div>
-        <div class="btn-login">
-          <input type="button" class="btn" value="Entrar">
-          <img src="src/assets/seta.svg" alt="">
-        </div>
-        <span>OU</span>
-        <div class="login-alt">
-          <!--BOTÕES MERAMENTE INLUSTRATIVOS POIS OS MESMOS SERAM CRIADOS VIA JS COM A API DISPONIBILIZADA POR CADA SERVIÇO-->
-          <div class="btn-account-alt">
-            <div class="login-alt-button google-logo">
-              <img src="src/assets/google.svg" alt="">
-              <p>Entre com o Google</p>
+        </section>
+        <section class="section-login">
+            <div class="logo">
+                <img src="src/assets/logo.svg" alt="">
+                <h1>FOFOQUINHA</h1>
             </div>
-            <div class="login-alt-button facebook-logo">
-              <img src="src/assets/facebook.svg" alt="">
-              <p>Entre com o Facebook</p>
+            <div class="form-login">
+                <div>
+                    <input class="email-senha" id="form-email" type="text" placeholder="Email ou telefone">
+                </div>
+                <div class="pass-field">
+                    <input class="email-senha" id="form_senha" type="password" placeholder="Senha">
+                    <i class="bi bi-eye" id="btn-icon" onclick="mostrarSenha()"></i>
+                </div>
+                <div class="esqueceu-senha">
+                    <a href="#">Esqueceu sua senha?</a>
+                </div>
             </div>
-          </div>
-        </div>
-    </section>
+            <div class="btn-login">
+                <input type="button" class="btn" value="Entrar">
+                <img src="src/assets/seta.svg" alt="">
+            </div>
+            <span>OU</span>
+            <div class="login-alt">
+                <!--BOTÕES MERAMENTE INLUSTRATIVOS POIS OS MESMOS SERAM CRIADOS VIA JS COM A API DISPONIBILIZADA POR CADA SERVIÇO-->
+                <div class="btn-account-alt">
+                    <div class="login-alt-button google-logo">
+                        <img src="src/assets/google.svg" alt="">
+                        <p>Entre com o Google</p>
+                    </div>
+                    <div class="login-alt-button facebook-logo">
+                        <img src="src/assets/facebook.svg" alt="">
+                        <p>Entre com o Facebook</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <script src="src/js/icon-pass.js"></script>
 </body>
 </html>
