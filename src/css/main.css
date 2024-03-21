@@ -11,14 +11,20 @@ body{
     height: 100vh;
 
     background: rgb(255,70,16);
-background: linear-gradient(165deg, rgba(255,70,16,1) 0%, rgba(255,107,10,1) 11%, rgba(255,207,133,1) 31%, rgba(255,255,255,1) 48%, rgba(255,255,255,1) 61%, rgba(255,207,133,1) 84%, rgba(255,107,10,1) 100%);
+    background: linear-gradient(165deg, 
+    rgba(255,70,16,1) 0%, 
+    rgba(255,107,10,1) 11%, 
+    rgba(255,207,133,1) 31%, 
+    rgba(255,207,133,1) 48%, 
+    rgba(255,207,133,1) 61%, 
+    rgba(255,107,10,1) 84%, 
+    rgba(255,107,10,1) 100%);
 }
 
 
 /*------------------------Inicio do Banner do site ------------------------*/
 .banner{
     margin-top: 3.3rem;
-    border: 1px solid green;
 
     width: 50rem;
     height: 65rem;
@@ -39,8 +45,6 @@ background: linear-gradient(165deg, rgba(255,70,16,1) 0%, rgba(255,107,10,1) 11%
 
 }
 
-
-
 .titulo-pag{
     font-size: 5.5rem;
     color: #FFD952;
@@ -57,10 +61,140 @@ background: linear-gradient(165deg, rgba(255,70,16,1) 0%, rgba(255,107,10,1) 11%
 /*------------------------ Fim do Banner do site ------------------------*/
 /*------------------------ Inicio do form login ------------------------*/
 
+.logo{
+    display: grid;
+    align-items: center;
+    justify-items: center;
+
+    margin-top: 3.3rem;
+    height: 15rem;
+}
+
+h1{
+    color: #FFD952;
+    font-size: 2.4rem;
+    font-weight: 900;
+}
+
+
 .section-login{
-    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #FFF;
+    box-shadow: 0px 18px 88px -4px rgba(24, 39, 75, 0.14);
+
+    box-shadow: 0px 8px 28px -6px rgba(24, 39, 75, 0.12);
+
+
     width: 50rem;
     height: 65rem;
     border-radius: 3rem;
     margin-top: 3.3rem;
+}
+
+.email-senha{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 37.8rem;
+    height: 4.8rem;
+
+    margin-top: 2rem;
+    padding-left: 15px;
+
+    font-size: 16px;
+
+    border-radius: .6rem;
+    border: solid 1px #CBD2E0;
+}
+
+.email-senha::placeholder{
+    font-weight: 400;
+    font-size: 14px;
+    
+}
+
+.pass-field{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.pass-field i{
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    cursor: pointer;
+    font-size: 2.4rem;
+}
+
+.esqueceu-senha{
+    display: flex;
+    justify-content: end;
+}
+
+.esqueceu-senha > a{
+    margin-top: 5px;
+    color: #ff0000;
+    font-size: 14px;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+
+.btn-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFD952;
+    width: 37.8rem;
+    height: 5.6rem;
+
+    margin: 3rem 0 ;
+}
+
+.btn-login > img{
+    position: relative;
+    z-index: 999;
+    right: 130px;
+}
+
+.btn{
+    width: 37.8rem;
+    height: 5.6rem;
+    background-color: #FFD952;
+    color: #FFF;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+span{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+}
+
+.login-alt-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40rem;
+    height: 5rem;
+    border-radius: 25px;
+    border: solid 1px rgba(116, 119, 117, 1);
+}
+
+.login-alt-button > img {
+    position: relative;
+    right: 120px;
+}
+
+.google-logo{
+    margin-bottom: 1.2rem;
 }
