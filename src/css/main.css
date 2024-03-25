@@ -91,6 +91,7 @@ body{
 
 .logo{
     display: grid;
+    flex-direction: column;
     align-items: center;
     justify-items: center;
     margin-top: 3.3rem;
@@ -130,7 +131,7 @@ h1{
 
 .email-senha::placeholder{
     font-weight: 400;
-    font-size: 14px;
+    font-size: 1.4rem;
     
 }
 
