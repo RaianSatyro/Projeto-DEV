@@ -195,6 +195,16 @@ span{
     margin-bottom: 2.5rem;
 }
 
+.criar-conta {
+    margin-top: -20px;
+    padding-bottom: 25px;
+}
+
+.criar-conta > span > a {
+    text-decoration: none;
+    color: #ff0000;
+}
+
 .login-alt-button {
     display: flex;
     align-items: center;
