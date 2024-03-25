@@ -1,19 +1,14 @@
-@media (max-width: 750px) {
+@media (max-width: 720px) {
 
     .banner{display: none;}
-
-    body{
-        height: 1200px;
-        width: 736px;
-        display: flex;
-        align-items: flex-start;
-        justify-content: start;
-
-    }
 
     .section-login{
         height: 70rem;
         width: 40rem;
+    }
+
+    #background-color-1, #background-color-2, #background-color-3, #background-color-4{
+        display: none;
     }
 
 
