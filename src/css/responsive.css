@@ -4,10 +4,14 @@
 
     .section-login {
         box-shadow: none;
+        height: 70rem;
+        width: 40rem;
     }
 
     .section-cadastro {
-        box-shadow: none; 
+        box-shadow: none;
+        height: 70rem;
+        width: 40rem;
     }
 
     #background-color-1, #background-color-2, #background-color-3, #background-color-4{
