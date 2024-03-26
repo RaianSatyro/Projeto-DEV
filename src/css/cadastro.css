@@ -181,3 +181,9 @@ span {
 .google-logo {
   margin-bottom: 10px;
 }
+
+#registrationForm{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
