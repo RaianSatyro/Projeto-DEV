@@ -108,7 +108,11 @@ h1{
     background-color: #FFF;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; 
     width: 50rem;
+<<<<<<< HEAD
     height: 75rem;
+=======
+    height: 70rem;
+>>>>>>> d668bb5332ca7138545be40c10a158dd3fe3b26b
     border-radius: 3rem;
 }
 
@@ -129,7 +133,6 @@ h1{
 .email-senha::placeholder{
     font-weight: 400;
     font-size: 1.4rem;
-    
 }
 
 .pass-field{
@@ -143,7 +146,7 @@ h1{
 .pass-field i{
     position: absolute;
     right: 5%;
-    bottom: 15%;
+    bottom: 17%;
     cursor: pointer;
     font-size: 2.4rem;
 }
@@ -161,21 +164,20 @@ h1{
     text-decoration: none;
 }
 
-.btn-login{
+.btn-login {
     display: flex;
     align-items: center;
     justify-content: center;
     background-color: #FFD952;
-    width: 37.8rem;
-    height: 5.6rem;
+    width: 39rem;
+    margin: 3rem 0;
 
-    margin: 3rem 0 ;
-}
+  }
 
 .btn-login > img{
     position: relative;
     z-index: 999;
-    right: 130px;
+    right: 15rem;
 }
 
 .btn{
@@ -185,6 +187,7 @@ h1{
     color: #FFF;
     font-size: 1.8rem;
     font-weight: 600;
+    cursor: pointer;
 }
 
 span{

@@ -2,7 +2,14 @@
 
     .banner{display: none;}
 
-    .section-login{
+    .section-login {
+        box-shadow: none;
+        height: 70rem;
+        width: 40rem;
+    }
+
+    .section-cadastro {
+        box-shadow: none;
         height: 70rem;
         width: 40rem;
     }
@@ -11,5 +18,14 @@
         display: none;
     }
 
+}
 
+@media (max-width: 950px) {
+    .banner{display: none;}
+}
+
+@media (max-width: 1400px) {
+    .container {
+        gap: 0rem;
+    }
 }
