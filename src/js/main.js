@@ -1,15 +1,11 @@
+import { subfofoq } from './firebase/app.js'
+
 const nome = document.querySelector('#nome');
 const sobrenome = document.querySelector('#sobrenome');
 const email = document.querySelector('#form-email');
 const password = document.querySelector('#form_senha');
 const botao = document.querySelector('#btn_criarConta');    
 
-
-function teste1(){
-    console.log('clicou')
-}
-
-botao.addEventListener('click', teste1());
 
 botao.addEventListener('click', async function(){
     console.log('clicou')
@@ -20,7 +16,7 @@ botao.addEventListener('click', async function(){
         password: password.value
     }    
 
-    const subscriptionId = await subscribeTofofoq(subscrition);
+    const subscriptionId = await subfofoq(subscription);
     console.log(`Inscrito com sucesso: ${subscriptionId}`)
 
     nome.value = '';
