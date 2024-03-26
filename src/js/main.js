@@ -4,7 +4,7 @@ const nome = document.querySelector('#form-nome');
 const sobrenome = document.querySelector('#form-sobrenome');
 const email = document.querySelector('#form-email');
 const password = document.querySelector('#form-senha');
-const botao = document.querySelector('#btn-criarConta');    
+const botao = document.querySelector('#btn-criar-conta');    
 
 
 botao.addEventListener('click', async function(){
