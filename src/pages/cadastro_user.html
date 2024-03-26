@@ -21,27 +21,32 @@
         <img src="../assets/logo.svg" alt="">
         <h1>FOFOQUINHA</h1>
       </div>
-
-      <div class="form-criar-conta">
-        <div class="inputs-nome-sobrenome">
-          <input class="email-senha input-zone" id="form-nome" type="text" placeholder="Nome">
-          <input class="email-senha input-zone" id="form-sobrenome" type="text" placeholder="Sobrenome">
+      <form action="" id="registrationForm">
+        <div class="form-criar-conta">
+          <div class="inputs-nome-sobrenome">
+            <label for="form-nome"></label>
+            <input class="email-senha input-zone" id="form-nome" type="text" placeholder="Nome">
+            <label for="form-sobrenome"></label>
+            <input class="email-senha input-zone" id="form-sobrenome" type="text" placeholder="Sobrenome">
+          </div>
+          <div class="pass-field">
+            <label for="form-email"></label>
+            <input class="email-senha input-field" id="form-email" type="text" placeholder="Email ou telefone">
+          </div>
+          <div class="pass-field">
+            <label for="form-senha"></label>
+            <input class="email-senha input-field" id="form-senha" type="password" placeholder="Senha">
+            <i class="bi bi-eye" id="btn-icon" onclick="mostrarSenha()"></i> 
+          </div>
         </div>
-        <div class="pass-field">
-          <input class="email-senha input-field" id="form-email" type="text" placeholder="Email ou telefone">
+        <div class="btn-login">
+          <input class="btn" id="btn-criar-conta" value="Criar conta" type="button">
+          <img src="../assets/seta.svg" alt="">
         </div>
-        <div class="pass-field">
-          <input class="email-senha input-field" id="form-senha" type="password" placeholder="Senha">
-          <i class="bi bi-eye" id="btn-icon" onclick="mostrarSenha()"></i> 
+        <div class="entrar-conta">
+          <span>já tem uma conta? <a href="/index.html">entre!</a></span>
         </div>
-      </div>
-      <div class="btn-login">
-        <input class="btn" id="btn-criar-conta" value="Criar conta" type="button">
-        <img src="../assets/seta.svg" alt="">
-      </div>
-      <div class="entrar-conta">
-        <span>já tem uma conta? <a href="/index.html">entre!</a></span>
-      </div>
+      </form>
       <span>OU</span>
       <div class="login-alt">
           <!--BOTÕES MERAMENTE INLUSTRATIVOS POIS OS MESMOS SERAM CRIADOS VIA JS COM A API DISPONIBILIZADA POR CADA SERVIÇO-->
