@@ -1,26 +1,24 @@
 import { subfofoq } from './firebase/app.js'
 
-const nome = document.querySelector('#form-nome');
-const sobrenome = document.querySelector('#form-sobrenome');
-const email = document.querySelector('#form-email');
-const password = document.querySelector('#form-senha');
-const botao = document.querySelector('#btn-criar-conta');    
+document.getElementById("registrationForm").addEventListener("submit", async function(event) {
+    event.preventDefault();
 
+    const nome = document.getElementById("form-nome").value.trim();
+    const sobrenome = document.getElementById("form-sobrenome").value.trim();
+    const email = document.getElementById("form-email").value.trim();
+    const senha = document.getElementById("form-senha").value.trim();
 
-botao.addEventListener('click', async function(){
-    console.log('clicou')
-    const subscription = {
-        nome: nome.value,
-        sobrenome: sobrenome.value,
-        email: email.value,
-        password: password.value
-    }    
+    if (!nome || !sobrenome || !email || !senha) {
+        alert('Por favor, preencha todos os campos.');
+        return;
+    }
 
-    const subscriptionId = await subfofoq(subscription);
-    console.log(`Inscrito com sucesso: ${subscriptionId}`)
+    try {
+        await subfofoq({ nome, sobrenome, email, password: senha });
+        console.log('Inscrição enviada com sucesso.');
 
-    nome.value = '';
-    sobrenome.value = '';
-    email.value = '';
-    password.value = '';
-})
+        document.getElementById("registrationForm").reset();
+    } catch (error) {
+        console.error('Erro ao enviar inscrição:', error);
+    }
+});
