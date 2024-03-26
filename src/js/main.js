@@ -1,5 +1,3 @@
-
-
 const nome = document.querySelector('#nome');
 const sobrenome = document.querySelector('#sobrenome');
 const email = document.querySelector('#form-email');
@@ -11,16 +9,16 @@ function teste1(){
     console.log('clicou')
 }
 
-botao.addEventListener('click', teste1())
+botao.addEventListener('click', teste1());
 
-/*botao.addEventListener('click', async function(){
+botao.addEventListener('click', async function(){
     console.log('clicou')
-    const subscrition = {
+    const subscription = {
         nome: nome.value,
         sobrenome: sobrenome.value,
-        eamil: email.value,
+        email: email.value,
         password: password.value
-    }
+    }    
 
     const subscriptionId = await subscribeTofofoq(subscrition);
     console.log(`Inscrito com sucesso: ${subscriptionId}`)
@@ -29,4 +27,4 @@ botao.addEventListener('click', teste1())
     sobrenome.value = '';
     email.value = '';
     password.value = '';
-})*/
+})
