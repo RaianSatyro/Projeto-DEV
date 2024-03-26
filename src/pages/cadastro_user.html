@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,23 +21,33 @@
         <img src="../assets/logo.svg" alt="">
         <h1>FOFOQUINHA</h1>
       </div>
-      <div class="form-criar-conta">
-        <div>
-          <input class="email-senha" id="nome" type="text" placeholder="Nome">
-          <input class="email-senha" id="sobrenome" type="text" placeholder="Sobrenome">
+
+      <form action="" id="registrationForm">
+        <div class="form-criar-conta">
+          <div>
+            <label for="nome"></label>
+            <input class="email-senha" id="nome" type="text" placeholder="Nome">
+            
+            <label for="sobrenome"></label>
+            <input class="email-senha" id="sobrenome" type="text" placeholder="Sobrenome">
+          </div>
+          <div>
+            <label for="form-email"></label>
+            <input class="email-senha" id="form-email" type="text" placeholder="Email ou telefone">
+          </div>
+          <div class="pass-field">
+            <label for="form_senha"></label>
+            <input class="email-senha" id="form_senha" type="password" placeholder="Senha" >
+            <i class="bi bi-eye" id="btn-icon" onclick="mostrarSenha()"></i>
+          </div>
         </div>
-        <div>
-          <input class="email-senha" id="form-email" type="text" placeholder="Email ou telefone">
+      
+        <div class="btn-login">
+          <input class="btn" value="Criar conta" type="button" id="btn_criarConta">
+          <img src="../assets/seta.svg" alt="">
         </div>
-        <div class="pass-field">
-          <input class="email-senha" id="form_senha" type="password" placeholder="Senha">
-          <i class="bi bi-eye" id="btn-icon" onclick="mostrarSenha()"></i>
-        </div>
-      </div>
-      <div class="btn-login">
-        <input class="btn" value="Criar conta" type="button">
-        <img src="../assets/seta.svg" alt="">
-      </div>
+
+      </form>
       <span>OU</span>
       <div class="login-alt">
           <!--BOTÕES MERAMENTE INLUSTRATIVOS POIS OS MESMOS SERAM CRIADOS VIA JS COM A API DISPONIBILIZADA POR CADA SERVIÇO-->
@@ -53,5 +63,6 @@
     </section>
   </div>
   <script src="../js/icon-pass.js" ></script>
+  <script src="../js/main.js"></script>
 </body>
 </html>
