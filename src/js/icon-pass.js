@@ -1,14 +1,12 @@
-function mostrarSenha(){
-    const form_senha = document.querySelector('#form_senha');
+function mostrarSenha() {
+    const form_senha = document.querySelector('#form-senha');
     const btnShowPass = document.querySelector('#btn-icon');
 
-    if(form_senha.type === 'password'){
+    if (form_senha.type === 'password') {
         form_senha.setAttribute('type', 'text');
         btnShowPass.setAttribute('class', 'bi bi-eye-slash');
-    }
-    else{
+    } else {
         form_senha.setAttribute('type', 'password');
         btnShowPass.setAttribute('class', 'bi bi-eye');
     }
-
 }
