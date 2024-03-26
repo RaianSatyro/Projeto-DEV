@@ -41,13 +41,16 @@ body{
 
 /*------------------------Inicio do Banner do site ------------------------*/
 
-.container {
+.section-cadastro {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
-    gap: 15rem;
-}
+    background-color: blue;
+    box-shadow: rgba(0, 0, 0, 0.0) 0px 10px 36px 0px, rgba(0, 0, 0, 0.00) 0px 0px 0px 1px; 
+    width: 60rem;
+    height: 75rem;
+    border-radius: 3rem;
+  }
 
 .banner {
     margin-top: 3.3rem;

@@ -2,14 +2,26 @@
 
     .banner{display: none;}
 
-    .section-login{
-        height: 70rem;
-        width: 40rem;
+    .section-login {
+        box-shadow: none;
+    }
+
+    .section-cadastro {
+        box-shadow: none; 
     }
 
     #background-color-1, #background-color-2, #background-color-3, #background-color-4{
         display: none;
     }
 
+}
 
+@media (max-width: 950px) {
+    .banner{display: none;}
+}
+
+@media (max-width: 1400px) {
+    .container {
+        gap: 0rem;
+    }
 }
