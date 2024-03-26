@@ -111,7 +111,7 @@ h1{
 .pass-field i {
   position: absolute;
   right: 5%;
-  bottom: 15%;
+  bottom: 19%;
   cursor: pointer;
   font-size: 2.4rem;
 }
@@ -121,15 +121,14 @@ h1{
   align-items: center;
   justify-content: center;
   background-color: #FFD952;
-  width: 37.8rem;
-  height: 5.6rem;
-  margin: 3rem 0 ;
+  width: 53rem;
+  margin: 3rem 0;
 }
 
 .btn-login > img {
   position: relative;
   z-index: 999;
-  right: 130px;
+  right: 13rem;
 }
 
 .btn {
@@ -139,6 +138,7 @@ h1{
   color: #FFF;
   font-size: 1.8rem;
   font-weight: 600;
+  cursor: pointer;
 }
 
 span {
