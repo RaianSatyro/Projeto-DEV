@@ -38,18 +38,18 @@
             <form><!-- Formulário adicionado aqui -->
                 <div class="form-login">
                     <div>
-                        <input class="email-senha" id="form-email" type="text" placeholder="Email ou telefone" required> 
+                        <input class="email-senha" id="form-email" type="text" placeholder="Email ou telefone" onchange="validateFields()"> 
                     </div>
                     <div class="pass-field">
-                        <input class="email-senha" id="form-senha" type="password" placeholder="Senha" required>
+                        <input class="email-senha" id="form-senha" type="password" placeholder="Senha">
                         <i class="bi bi-eye" id="btn-icon" onclick="mostrarSenha()"></i>
                     </div>
                     <div class="esqueceu-senha">
-                        <a href="#">esqueceu sua senha?</a>
+                        <button type="submit" id="recupera-senha">esqueceu sua senha?</button>
                     </div>
                 </div>
                 <div class="btn-login">
-                    <input type="submit" class="btn" value="Entrar"> <!-- Mudança do tipo de botão para submit -->
+                    <input type="submit" class="btn" value="Entrar" disabled="true"> <!-- Mudança do tipo de botão para submit -->
                     <img src="src/assets/seta.svg" alt="">
                 </div>
             </form><!-- Fim do formulário -->
@@ -73,5 +73,6 @@
         </section>
     </div>
     <script src="src/js/icon-pass.js" ></script>
+    <script src="src/js/validations.js"></script>
 </body>
 </html>
