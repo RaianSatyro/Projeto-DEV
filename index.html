@@ -38,14 +38,14 @@
             <form><!-- Formulário adicionado aqui -->
                 <div class="form-login">
                     <div>
-                        <input class="email-senha" id="form-email" type="text" placeholder="Email ou telefone" onchange="validateFields()"> 
+                        <input class="email-senha" id="form-email" type="text" placeholder="Email ou telefone"> 
                     </div>
                     <div class="pass-field">
                         <input class="email-senha" id="form-senha" type="password" placeholder="Senha">
                         <i class="bi bi-eye" id="btn-icon" onclick="mostrarSenha()"></i>
                     </div>
-                    <div class="esqueceu-senha">
-                        <button type="submit" id="recupera-senha">esqueceu sua senha?</button>
+                    <div class="esqueceu-senha-section">
+                        <button type="submit" class="esqueceu-senha" id="recupera-senha">esqueceu sua senha?</button>
                     </div>
                 </div>
                 <div class="btn-login">
@@ -72,7 +72,10 @@
             </div>
         </section>
     </div>
+
     <script src="src/js/icon-pass.js" ></script>
     <script src="src/js/validations.js"></script>
+    <script type="module" src="src/js/firebase/firebase-auth.js"></script>
+    
 </body>
 </html>
