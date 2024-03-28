@@ -166,26 +166,24 @@ h1{
     align-items: center;
     justify-content: center;
     background-color: #FFD952;
-    width: 39rem;
     margin: 3rem 0;
-
 }
 
 .btn-login > img{
-    position: relative;
-    z-index: 999;
-    right: 15rem;
-}
+    position: absolute;
+    padding-left: 10rem;
+}   
 
 .btn{
-    width: 39.0rem;
+    width: 100%;
     height: 5.6rem;
-    background-color: #000000;
+    background-color: #FFD952;
     color: #FFF;
     font-size: 1.8rem;
     font-weight: 600;
     cursor: pointer;
 }
+
 
 .btn:hover, .btn-login:hover, i:hover{
     background-color: #f06c00;
