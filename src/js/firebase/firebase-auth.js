@@ -14,18 +14,23 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
 
-export function login() {
-    signInWithEmailAndPassword(auth, 'satyro45@gmail.com', '1234567')
+export function login(email, senha) {
+    signInWithEmailAndPassword(auth, email, senha)
         .then((userCredential) => {
             // Usuário autenticado com sucesso
             const user = userCredential.user;
             console.log('Login realizado com sucesso', user);
+            loginValid();
         })
         .catch((error) => {
             // Ocorreu um erro durante a autenticação
             console.error('Erro ao fazer login:', error.message);
+            alert('Usuário ou senha inválida');
         });
 }
 
+function loginValid(){
+    window.location.href = "/src/pages/home.html";
+}
 // Chama a função login quando a página é carregada
 
