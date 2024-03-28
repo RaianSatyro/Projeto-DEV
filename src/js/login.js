@@ -7,4 +7,5 @@ const senha = document.querySelector("#form-senha");
 
 botaoLogin.addEventListener("click", () => {
     login(email.value, senha.value);
+
 });
