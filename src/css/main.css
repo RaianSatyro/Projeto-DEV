@@ -185,7 +185,7 @@ h1{
 }
 
 
-.btn:hover, .btn-login:hover, i:hover{
+.btn:hover, .btn-login:hover{
     background-color: #f06c00;
     transition: ease-in 0.15s;
 }

@@ -1,31 +1,94 @@
+@media (max-width: 415px) {
+
+.email-senha {
+    width: 95%;
+}
+.email{
+    margin-left: -1px;
+}
+.pass-field i {
+    right: 5%;
+}
+.btn-login {
+    width: 30rem;
+}
+span, .esqueceu-senha > a{
+    font-size: 13px;
+}
+.login-alt-button {
+    width: 30rem;
+    }
+}
+
+/* Estilos para telas pequenas (Smartphones) */
+@media (max-width: 430px) {
+
+.banner {display: none;}
+
+.form-criar-conta  * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 28rem;
+}
+
+.section-login {
+    box-shadow: none;
+    height: 70rem;
+    width: 40rem;
+}
+
+.section-cadastro {
+    box-shadow: none;
+    height: 70rem;
+    width: 40rem;
+}
+
+#background-color-1, #background-color-2, #background-color-3, #background-color-4 {display: none;}
+}
+
 @media (max-width: 720px) {
 
-    .banner{display: none;}
+.banner{display: none;}
 
-    .section-login {
-        box-shadow: none;
-        height: 70rem;
-        width: 40rem;
-    }
-
-    .section-cadastro {
-        box-shadow: none;
-        height: 70rem;
-        width: 40rem;
-    }
-
-    #background-color-1, #background-color-2, #background-color-3, #background-color-4{
-        display: none;
-    }
-
+.section-login {
+    box-shadow: none;
+    height: 70rem;
+    width: 40rem;
 }
 
-@media (max-width: 950px) {
-    .banner{display: none;}
+.section-cadastro {
+    box-shadow: none;
+    height: 70rem;
+    width: 40rem;
 }
 
-@media (max-width: 1400px) {
-    .container {
-        gap: 0rem;
-    }
+#background-color-1, #background-color-2, #background-color-3, #background-color-4 {display: none;}
+}
+
+/* Estilos para telas médias (Tablets) */
+@media (max-width: 884px) {
+.banner {
+display: none;
+}
+
+.section-cadastro {
+width: 60rem;
+height: 65rem;
+}
+}
+
+/* Estilos para telas grandes (Desktop) */
+@media (max-width: 1200px) {
+.container {
+gap: 0rem;
+}
+}
+
+@media (min-height: 80px) {
+
+.section-cadastro {
+width: 60rem;
+height: 70rem;
+}
 }

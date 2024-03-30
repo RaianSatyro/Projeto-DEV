@@ -109,6 +109,10 @@ h1{
 }
 
 .pass-field i {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
   position: absolute;
   right: 5%;
   bottom: 19%;
@@ -139,7 +143,7 @@ h1{
   cursor: pointer;
 }
 
-.btn:hover, .btn-login:hover, i:hover{
+.btn:hover, .btn-login:hover{
   background-color: #f06c00;
   transition: ease-in 0.15s;
 }
