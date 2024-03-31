@@ -159,7 +159,7 @@ span {
   padding-bottom: 25px;
 }
 
-.entrar-conta > span > a {
+a {
   text-decoration: none;
   color: #ff0000;
 }
@@ -193,4 +193,53 @@ span {
   display: flex;
   align-items: center;
   flex-direction: column;
+}
+
+/* Estilo para o diálogo de registro bem-sucedido */
+.registroSucessoDialog {
+  position: absolute;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Adicionando a transição para transform */
+  transform: translateY(-50px); /* Inicialmente escondido acima */
+}
+
+.feedback {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #ffffff;
+  width: calc(40rem - 2 * 40px);
+  height: calc(20rem - 2 * 40px);
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  padding: 30px;
+  transition: transform 1s cubic-bezier(0.68, -0.55, 0.27, 1.55), opacity 0.5s ease-in-out;
+  transform: translateY(-50px);
+}
+
+.feedback h1,
+p {
+  margin: 0;
+}
+
+.feedback a {
+  margin: auto;
+  margin-bottom: 0;
+  background-color: #ffd952;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  transition: .3s;
+}
+
+.feedback a:hover {
+  background-color: #fff2c3;
+  color: #ffd952;
+}
+
+.feedback.show {
+  opacity: 1;
+  transform: translateY(0); /* Quando a classe .show é adicionada, mostra o popup */
 }
