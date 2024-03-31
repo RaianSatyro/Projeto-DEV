@@ -14,3 +14,4 @@ function monitora_estado_User(){
 }
 
 window.addEventListener('load', monitora_estado_User())
+
