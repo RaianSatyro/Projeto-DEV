@@ -7,3 +7,4 @@ document.getElementById('btn-criar-conta').addEventListener('click', () => {
     createUser(userEmail, userPass);
 
 });
+

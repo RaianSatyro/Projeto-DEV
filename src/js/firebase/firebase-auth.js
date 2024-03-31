@@ -34,3 +34,11 @@ function loginValid(){
 }
 // Chama a função login quando a página é carregada
 
+
+// Isso vai verificar se o usuario ja fez login e vai manter ele logado 
+
+firebase.auth().onAuthStateChanged(user => {
+    if (user) {
+        window.location.href = "../home.html"; 
+    }
+});
