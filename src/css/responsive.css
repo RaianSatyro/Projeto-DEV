@@ -1,94 +1,125 @@
-@media (max-width: 415px) {
-
-.email-senha {
-    width: 95%;
-}
-.email{
-    margin-left: -1px;
-}
-.pass-field i {
-    right: 5%;
-}
-.btn-login {
-    width: 30rem;
-}
-span, .esqueceu-senha > a{
-    font-size: 13px;
-}
-.login-alt-button {
-    width: 30rem;
-    }
-}
-
 /* Estilos para telas pequenas (Smartphones) */
-@media (max-width: 430px) {
-
-.banner {display: none;}
-
-.form-criar-conta  * {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 28rem;
-}
-
-.section-login {
-    box-shadow: none;
-    height: 70rem;
-    width: 40rem;
-}
-
-.section-cadastro {
-    box-shadow: none;
-    height: 70rem;
-    width: 40rem;
-}
-
-#background-color-1, #background-color-2, #background-color-3, #background-color-4 {display: none;}
-}
-
-@media (max-width: 720px) {
-
-.banner{display: none;}
-
-.section-login {
-    box-shadow: none;
-    height: 70rem;
-    width: 40rem;
-}
-
-.section-cadastro {
-    box-shadow: none;
-    height: 70rem;
-    width: 40rem;
-}
-
-#background-color-1, #background-color-2, #background-color-3, #background-color-4 {display: none;}
-}
-
-/* Estilos para telas médias (Tablets) */
-@media (max-width: 884px) {
-.banner {
-display: none;
-}
-
-.section-cadastro {
-width: 60rem;
-height: 65rem;
-}
-}
-
-/* Estilos para telas grandes (Desktop) */
-@media (max-width: 1200px) {
-.container {
-gap: 0rem;
-}
-}
-
-@media (min-height: 80px) {
-
-.section-cadastro {
-width: 60rem;
-height: 70rem;
-}
-}
+@media (max-width: 415px) {
+    /* Ajuste de largura para campos de email e senha */
+    .email-senha {
+      width: 95%;
+    }
+    /* Ajuste de margem para o campo de email */
+    .email {
+      margin-left: -1px;
+    }
+    /* Posicionamento do ícone no campo de senha */
+    .pass-field i {
+      right: 5%;
+    }
+    /* Ajuste de largura para botão de login */
+    .btn-login {
+      width: 30rem;
+    }
+    /* Ajuste de tamanho de fonte para texto e link de esqueceu a senha */
+    span,
+    .esqueceu-senha > a {
+      font-size: 13px;
+    }
+    /* Ajuste de largura para botão de alternar login/cadastro */
+    .login-alt-button {
+      width: 30rem;
+    }
+  }
+  
+  /* Estilos para telas pequenas (Smartphones) */
+  @media (max-width: 430px) {
+    /* Ocultar banner */
+    .banner {
+      display: none;
+    }
+    /* Ajuste de layout para formulário de criar conta */
+    .form-criar-conta * {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 28rem;
+    }
+    /* Ajuste de layout para seções de login e cadastro */
+    .section-login,
+    .section-cadastro {
+      box-shadow: none;
+      height: 70rem;
+      width: 40rem;
+    }
+    /* Ocultar elementos com IDs específicos */
+    #background-color-1,
+    #background-color-2,
+    #background-color-3,
+    #background-color-4 {
+      display: none;
+    }
+  }
+  
+  /* Estilos para telas médias (Tablets) */
+  @media (max-width: 720px) {
+    /* Ocultar banner */
+    .banner {
+      display: none;
+    }
+    /* Ajuste de layout para seções de login e cadastro */
+    .section-login,
+    .section-cadastro {
+      box-shadow: none;
+      height: 70rem;
+      width: 40rem;
+    }
+    /* Ajuste de layout para feedback */
+    .feedback {
+      width: calc(30rem - 2 * 40px);
+      height: calc(20rem - 2 * 40px);
+      padding: 30px;
+    }
+    /* Ocultar elementos com IDs específicos */
+    #background-color-1,
+    #background-color-2,
+    #background-color-3,
+    #background-color-4 {
+      display: none;
+    }
+  }
+  
+  /* Estilos para telas médias (Tablets) */
+  @media (max-width: 884px) {
+    /* Ocultar banner */
+    .banner {
+      display: none;
+    }
+    /* Ajuste de layout para seção de cadastro */
+    .section-cadastro {
+      width: 60rem;
+      height: 65rem;
+    }
+  }
+  
+  /* Estilos para telas grandes (Desktop) */
+  @media (max-width: 1200px) {
+    /* Ajuste de gap para container */
+    .container {
+      gap: 0rem;
+    }
+  }
+  
+  /* Estilos para altura máxima */
+  @media (max-height: 800px) {
+    /* Ajuste de layout para seção de cadastro */
+    .section-cadastro {
+      width: 60rem;
+      height: 70rem; /* Define altura desejada quando altura é menor ou igual a 800px */
+    }
+  }
+  
+  /* Estilos para altura mínima */
+  @media (min-height: 912px) {
+    /* Ajuste de layout para seção de cadastro */
+    .section-cadastro {
+      width: 60rem;
+      height: 75rem; /* Define altura desejada quando altura é maior que 800px */
+    }
+  }
+  

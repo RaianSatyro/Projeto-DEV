@@ -1,37 +1,47 @@
-:root{
-    font-size: 62.5%; /* 1rem = 10px*/
+/* Definir o tamanho da fonte base para facilitar o cálculo de rem */
+:root {
+	font-size: 62.5%; /* 1rem = 10px */
 }
 
+/* Definir estilos padrão para todos os elementos */
 * {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
-	outline: none;
+	margin: 0; /* Remover margem */
+	padding: 0; /* Remover preenchimento */
+	border: 0; /* Remover borda */
+	font-size: 100%; /* Tamanho da fonte padrão */
+	font: inherit; /* Herdar fonte do elemento pai */
+	vertical-align: baseline; /* Alinhamento vertical */
+	outline: none; /* Remover contorno ao focar */
 }
 
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+/* Definir elementos HTML5 como blocos */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block; /* Exibir como bloco */
 }
 
+/* Definir estilos específicos para o corpo do documento */
 body {
-	line-height: 1;
+	line-height: 1; /* Altura da linha */
 }
+
+/* Remover estilos padrão de listas */
 ol, ul {
-	list-style: none;
+	list-style: none; /* Remover marcadores de lista */
 }
+
+/* Remover estilos padrão de citações */
 blockquote, q {
-	quotes: none;
+	quotes: none; /* Remover aspas */
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+/* Remover conteúdo gerado por pseudo-elementos de citações */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: ''; /* Remover conteúdo */
+	content: none; /* Remover conteúdo */
 }
+
+/* Definir estilos para tabelas */
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+	border-collapse: collapse; /* Colapsar bordas de células */
+	border-spacing: 0; /* Espaçamento entre células */
 }

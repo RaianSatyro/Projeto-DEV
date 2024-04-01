@@ -1,0 +1,276 @@
+/* Importar a fonte Poppins do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,800;1,100&display=swap');
+
+/* Estilos gerais do corpo do documento */
+body {
+    font-family: "Poppins", sans-serif; /* Usar a fonte Poppins como padrão */
+    overflow: hidden; /* Ocultar barras de rolagem horizontal e vertical */
+}
+
+/* Estilos para os elementos de fundo */
+#background-color-1,
+#background-color-2,
+#background-color-3,
+#background-color-4 {
+    position: absolute; /* Posição absoluta em relação ao corpo do documento */
+    height: 800px; /* Altura fixa */
+    width: 800px; /* Largura fixa */
+    filter: blur(190px); /* Aplicar desfoque */
+    z-index: -1; /* Colocar atrás de outros elementos */
+}
+
+/* Estilos para os diferentes elementos de fundo */
+#background-color-1 {
+    background: radial-gradient(circle, #ffd95270, #ffd952); /* Gradiente radial */
+    top: 0px;
+    left: -300px;
+}
+
+#background-color-2 {
+    background: radial-gradient(circle, #f0000070, #f00000); /* Gradiente radial */
+    top: -500px;
+    left: -100px;
+    filter: blur(150px); /* Aplicar desfoque adicional */
+}
+
+#background-color-3 {
+    background: radial-gradient(circle, #ff000070, #ff0000); /* Gradiente radial */
+    top: 500px;
+    left: 1200px;
+}
+
+#background-color-4 {
+    background: radial-gradient(circle, #ffc70070, #ffc700); /* Gradiente radial */
+    top: -200px;
+    left: 1500px;
+    filter: blur(180px); /* Aplicar desfoque adicional */
+}
+
+/* Estilos para o container principal */
+.container {
+    display: flex; /* Exibir como flexível */
+    justify-content: center; /* Centralizar horizontalmente */
+    align-items: center; /* Centralizar verticalmente */
+    height: 100vh; /* Altura total da viewport */
+    gap: 15rem; /* Espaçamento entre os elementos filhos */
+}
+
+/* Estilos para o banner */
+.banner {
+    margin-top: 3.3rem; /* Margem superior */
+    width: 50rem; /* Largura fixa */
+    height: 50rem; /* Altura fixa */
+}
+
+/* Estilos para o conteúdo do banner */
+.banner-content {
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
+    display: flex; /* Exibir como flexível */
+    flex-direction: column; /* Coluna de layout */
+    align-items: center; /* Centralizar horizontalmente */
+    justify-content: end; /* Alinhar na parte inferior */
+}
+
+/* Estilos para a imagem do banner */
+.img-banner > img {
+    width: 45.786rem; /* Largura fixa */
+    height: 49.017rem; /* Altura fixa */
+}
+
+/* Estilos para o título da página */
+.titulo-pag {
+    font-size: 5.5rem; /* Tamanho da fonte */
+    color: #ffd952; /* Cor do texto */
+    font-weight: 800; /* Peso da fonte */
+}
+
+/* Estilos para a mensagem de login */
+.msg-login {
+    font-size: 3.2rem; /* Tamanho da fonte */
+    color: #000; /* Cor do texto */
+    font-weight: 600; /* Peso da fonte */
+}
+
+/* Estilos para o logo */
+.logo {
+    display: grid; /* Exibir como grid */
+    flex-direction: column; /* Coluna de layout */
+    align-items: center; /* Centralizar horizontalmente */
+    justify-items: center; /* Centralizar verticalmente */
+    margin-top: 3.3rem; /* Margem superior */
+    height: 15rem; /* Altura fixa */
+}
+
+/* Estilos para os cabeçalhos */
+h1 {
+    color: #ffd952; /* Cor do texto */
+    font-size: 2.4rem; /* Tamanho da fonte */
+    font-weight: 900; /* Peso da fonte */
+}
+
+/* Estilos para a seção de login */
+.section-login {
+    display: flex; /* Exibir como flexível */
+    flex-direction: column; /* Coluna de layout */
+    align-items: center; /* Centralizar horizontalmente */
+    background-color: #ffffff; /* Cor de fundo */
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px; /* Sombra */
+    width: 50rem; /* Largura fixa */
+    height: 70rem; /* Altura fixa */
+    border-radius: 3rem; /* Raio da borda */
+}
+
+/* Estilos para o campo de email e senha */
+.email-senha {
+    display: flex; /* Exibir como flexível */
+    flex-direction: column; /* Coluna de layout */
+    align-items: center; /* Centralizar horizontalmente */
+    justify-content: center; /* Centralizar verticalmente */
+    width: 37.8rem; /* Largura fixa */
+    height: 4.8rem; /* Altura fixa */
+    margin-top: 1.5rem; /* Margem superior */
+    padding-left: 15px; /* Preenchimento à esquerda */
+    font-size: 16px; /* Tamanho da fonte */
+    border-radius: .6rem; /* Raio da borda */
+    border: solid 1px #cbd2e0; /* Borda sólida */
+}
+
+/* Estilos para o placeholder do campo de email e senha */
+.email-senha::placeholder {
+    font-weight: 400; /* Peso da fonte */
+    font-size: 1.4rem; /* Tamanho da fonte */
+}
+
+/* Estilos para o campo de senha */
+.pass-field {
+    display: flex; /* Exibir como flexível */
+    flex-direction: column; /* Coluna de layout */
+    align-items: center; /* Centralizar horizontalmente */
+    justify-content: center; /* Centralizar verticalmente */
+    position: relative; /* Posição relativa */
+}
+
+/* Estilos para o ícone do campo de senha */
+.pass-field i {
+    position: absolute; /* Posição absoluta */
+    right: 5%; /* Alinhamento à direita */
+    bottom: 17%; /* Alinhamento inferior */
+    cursor: pointer; /* Alterar cursor ao passar por cima */
+    font-size: 2.4rem; /* Tamanho da fonte */
+}
+
+/* Estilos para a seção de esqueceu a senha */
+.esqueceu-senha-section {
+    display: flex; /* Exibir como flexível */
+    justify-content: end; /* Alinhar à direita */
+}
+
+/* Estilos para o link de esqueceu a senha */
+.esqueceu-senha {
+    margin-top: 5px; /* Margem superior */
+    color: #ff0000; /* Cor do texto */
+    font-size: 14px; /* Tamanho da fonte */
+    font-weight: 300; /* Peso da fonte */
+    text-decoration: none; /* Remover sublinhado */
+    cursor: pointer; /* Alterar cursor ao passar por cima */
+    background-color: transparent; /* Fundo transparente */
+}
+
+/* Estilos para o botão de login */
+.btn-login {
+    display: flex; /* Exibir como flexível */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    background-color: #ffd952; /* Cor de fundo */
+    margin: 3rem 0; /* Margem superior e inferior */
+    position: relative; /* Posição relativa */
+}
+
+/* Estilos para a imagem no botão de login */
+.btn-login > img {
+    pointer-events: none; /* Desativar eventos do mouse */
+    position: absolute; /* Posição absoluta */
+    left: calc(100% - 16rem); /* Alinhamento à direita com margem */
+}
+
+/* Estilos para o botão */
+.btn {
+    width: calc(100% - 0rem); /* Largura total */
+    height: 5.6rem; /* Altura fixa */
+    background-color: #ffd952; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    font-size: 1.8rem; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+    cursor: pointer; /* Alterar cursor ao passar por cima */
+    display: flex; /* Exibir como flexível */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: center; /* Centralizar horizontalmente */
+    position: relative; /* Posição relativa */
+}
+
+/* Estilos de hover para o botão */
+.btn:hover,
+.btn-login:hover {
+    background-color: #f06c00; /* Alterar cor de fundo ao passar o mouse */
+    transition: ease-in 0.15s; /* Transição suave */
+}
+
+/* Estilos para o texto adicional */
+span {
+    font-size: 1.6rem; /* Tamanho da fonte */
+    font-weight: 300; /* Peso da fonte */
+    margin-bottom: 2.5rem; /* Margem inferior */
+}
+
+/* Estilos para a seção de criar conta */
+.criar-conta {
+    margin-top: -20px; /* Margem superior */
+    padding-bottom: 25px; /* Preenchimento inferior */
+}
+
+/* Estilos para o link na seção de criar conta */
+.criar-conta > span > a {
+    text-decoration: none; /* Remover sublinhado */
+    color: #f00000; /* Cor do texto */
+}
+
+/* Estilos para o botão de alternar login/cadastro */
+.login-alt-button {
+    display: flex; /* Exibir como flexível */
+    align-items: center; /* Centralizar verticalmente */
+    justify-content: space-evenly; /* Distribuir o espaço uniformemente */
+    width: 38rem; /* Largura fixa */
+    height: 50px; /* Altura fixa */
+    border-radius: 25px; /* Raio da borda */
+    border: solid 1px rgba(116, 119, 117, 1); /* Borda sólida */
+    font-size: 16px; /* Tamanho da fonte */
+    font-weight: 600; /* Peso da fonte */
+}
+
+/* Estilos para a imagem no botão de alternar login/cadastro */
+.login-alt-button > img {
+    margin: 5%; /* Margem interna */
+}
+
+/* Estilos para o texto no botão de alternar login/cadastro */
+.login-alt-button > p {
+    margin: auto; /* Margem automática */
+    padding-right: 15%; /* Preenchimento à direita */
+}
+
+/* Estilos para o logo do Google */
+.google-logo {
+    margin-bottom: 10px; /* Margem inferior */
+}
+
+/* Estilos para o botão de criar conta */
+#btn_criarConta {
+    cursor: pointer; /* Alterar cursor ao passar por cima */
+}
+
+/* Estilos para o botão inválido */
+.botao-invalido {
+    color: #cbcbcb; /* Cor do texto */
+    cursor: default; /* Cursor padrão */
+}
