@@ -60,6 +60,8 @@ body {
     margin-top: 3.3rem; /* Margem superior */
     width: 50rem; /* Largura fixa */
     height: 50rem; /* Altura fixa */
+    pointer-events: none;
+    user-select: none;
 }
 
 /* Estilos para o conteúdo do banner */
@@ -100,6 +102,8 @@ body {
     justify-items: center; /* Centralizar verticalmente */
     margin-top: 3.3rem; /* Margem superior */
     height: 15rem; /* Altura fixa */
+    pointer-events: none;
+    user-select: none;
 }
 
 /* Estilos para os cabeçalhos */
@@ -107,6 +111,10 @@ h1 {
     color: #ffd952; /* Cor do texto */
     font-size: 2.4rem; /* Tamanho da fonte */
     font-weight: 900; /* Peso da fonte */
+}
+
+.form-login {
+    user-select: none;
 }
 
 /* Estilos para a seção de login */
