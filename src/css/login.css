@@ -199,7 +199,7 @@ h1 {
 .btn-login > img {
     pointer-events: none; /* Desativar eventos do mouse */
     position: absolute; /* Posição absoluta */
-    left: calc(100% - 16rem); /* Alinhamento à direita com margem */
+    right: 14rem; /* Alinhamento à direita com margem */
 }
 
 /* Estilos para o botão */

@@ -63,6 +63,8 @@ body {
   justify-items: center; /* Centralizar verticalmente */
   margin-top: 3.3rem; /* Margem superior */
   height: 15rem; /* Altura fixa */
+  pointer-events: none;
+  user-select: none;
 }
 
 /* Estilos para o cabeçalho */
@@ -82,6 +84,10 @@ h1 {
   width: 60rem; /* Largura fixa */
   height: 75rem; /* Altura fixa */
   border-radius: 3rem; /* Raio da borda */
+}
+
+.form-criar-conta {
+  user-select: none;
 }
 
 /* Estilos para os campos de entrada */
@@ -148,7 +154,7 @@ h1 {
 .btn-login > img {
   pointer-events: none; /* Desativar eventos do mouse */
   position: absolute; /* Posição absoluta */
-  left: calc(100% - 20rem); /* Alinhamento à direita com margem */
+  right: 18rem; /* Alinhamento à direita com margem */
 }
 
 /* Estilos para o botão */

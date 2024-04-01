@@ -47,6 +47,11 @@
       height: 70rem;
       width: 40rem;
     }
+
+    .btn-login > img {
+      display: none;
+    }
+
     /* Ocultar elementos com IDs específicos */
     #background-color-1,
     #background-color-2,
